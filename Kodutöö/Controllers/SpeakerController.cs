@@ -16,15 +16,13 @@ public class SpeakerController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Speaker>> GetSpeakers(string? name = null)
+    public ActionResult<IEnumerable<Speaker>> GetSpeaker(string? name = null)
     {
-        var query = _context.Speakers!.AsQueryable();
+        var query = _context.Speaker!.AsQueryable();
 
         if (name != null)
             query = query.Where(x => x.Name != null && x.Name.ToUpper().Contains(name.ToUpper()));
 
-        if (name != null)
-            query = query.Where(x => x.Email != null && x.Email.ToUpper().Contains(email.ToUpper()));
 
         return query.ToList();
     }
@@ -32,7 +30,7 @@ public class SpeakerController : ControllerBase
     [HttpGet("{id}")]
     public ActionResult<TextReader> GetSpeaker(int id)
     {
-        var speaker = _context.Speakers!.Find(id);
+        var speaker = _context.Speaker!.Find(id);
 
         if (speaker == null)
         {
@@ -45,7 +43,7 @@ public class SpeakerController : ControllerBase
     [HttpPut("{id}")]
     public IActionResult PutSpeaker(int id, Speaker speaker)
     {
-        var dbSpeaker = _context.Speakers!.AsNoTracking().FirstOrDefault(x => x.Id == speaker.Id);
+        var dbSpeaker = _context.Speaker!.AsNoTracking().FirstOrDefault(x => x.Id == speaker.Id);
         if (id != speaker.Id || dbSpeaker == null)
         {
             return NotFound();
@@ -60,7 +58,7 @@ public class SpeakerController : ControllerBase
     [HttpPost]
     public ActionResult<Speaker> PostSpeaker(Speaker speaker)
     {
-        var dbExercise = _context.Speakers!.Find(speaker.Id);
+        var dbExercise = _context.Speaker!.Find(speaker.Id);
         if (dbExercise == null)
         {
             _context.Add(speaker);
@@ -77,7 +75,7 @@ public class SpeakerController : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult DeleteSpeaker(int id)
     {
-        var speaker = _context.Speakers!.Find(id);
+        var speaker = _context.Speaker!.Find(id);
         if (speaker == null)
         {
             return NotFound();

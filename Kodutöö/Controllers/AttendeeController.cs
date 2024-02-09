@@ -16,9 +16,9 @@ public class AttendeeController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Attendee>> GetAttendees(string? name = null)
+    public ActionResult<IEnumerable<Attendee>> GetAttendee(string? name = null)
     {
-        var query = _context.Attendees!.AsQueryable();
+        var query = _context.Attendee!.AsQueryable();
 
         if (name != null)
             query = query.Where(x => x.Name != null && x.Name.ToUpper().Contains(name.ToUpper()));
@@ -29,7 +29,7 @@ public class AttendeeController : ControllerBase
     [HttpGet("{id}")]
     public ActionResult<TextReader> GetAttendee(int id)
     {
-        var attendee = _context.Attendees!.Find(id);
+        var attendee = _context.Attendee!.Find(id);
 
         if (attendee == null)
         {
@@ -42,7 +42,7 @@ public class AttendeeController : ControllerBase
     [HttpPut("{id}")]
     public IActionResult Attendee(int id, Attendee attendee)
     {
-        var dbAttendee = _context.Attendees!.AsNoTracking().FirstOrDefault(x => x.Id == attendee.Id);
+        var dbAttendee = _context.Attendee!.AsNoTracking().FirstOrDefault(x => x.Id == attendee.Id);
         if (id != attendee.Id || dbAttendee == null)
         {
             return NotFound();
@@ -57,7 +57,7 @@ public class AttendeeController : ControllerBase
     [HttpPost]
     public ActionResult<Attendee> PostAttendee(Attendee attendee)
     {
-        var dbExercise = _context.Attendees!.Find(attendee.Id);
+        var dbExercise = _context.Attendee!.Find(attendee.Id);
         if (dbExercise == null)
         {
             _context.Add(attendee);
