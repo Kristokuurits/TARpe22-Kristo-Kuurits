@@ -7,5 +7,9 @@ public class DataContext : DbContext
     public DataContext(DbContextOptions options) : base(options)
     { }
 
-    public DbSet<Test>? Tests { get; set; }
+    public DbSet<Event>? Event { get; set; }
+
+    public DbSet<Speaker>? Speaker { get; set; }
+
+    public DbSet<Attendee>? Attendee { get; set; }
 }
