@@ -6,19 +6,19 @@ namespace ITB2203Application.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class EventController : ControllerBase
+public class EventsController : ControllerBase
 {
     private readonly DataContext _context;
 
-    public EventController(DataContext context)
+    public EventsController(DataContext context)
     {
         _context = context;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Event>> GetEvent(string? name = null)
+    public ActionResult<IEnumerable<Event>> GetEvents(string? name = null)
     {
-        var query = _context.Event!.AsQueryable();
+        var query = _context.EventList!.AsQueryable();
 
         if (name != null)
             query = query.Where(x => x.Name != null && x.Name.ToUpper().Contains(name.ToUpper()));
@@ -29,7 +29,7 @@ public class EventController : ControllerBase
     [HttpGet("{id}")]
     public ActionResult<TextReader> GetEvent(int id)
     {
-        var e = _context.Event!.Find(id);
+        var e = _context.EventList!.Find(id);
 
         if (e == null)
         {
@@ -42,7 +42,7 @@ public class EventController : ControllerBase
     [HttpPut("{id}")]
     public IActionResult PutEvent(int id, Event e)
     {
-        var dbEvent = _context.Event!.AsNoTracking().FirstOrDefault(x => x.Id == e.Id);
+        var dbEvent = _context.EventList!.AsNoTracking().FirstOrDefault(x => x.Id == e.Id);
         if (id != e.Id || dbEvent == null)
         {
             return NotFound();
@@ -57,7 +57,7 @@ public class EventController : ControllerBase
     [HttpPost]
     public ActionResult<Event> PostEvent(Event e)
     {
-        var dbExercise = _context.Event!.Find(e.Id);
+        var dbExercise = _context.EventList!.Find(e.Id);
         if (dbExercise == null)
         {
             _context.Add(e);
@@ -74,7 +74,7 @@ public class EventController : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult DeleteEvent(int id)
     {
-        var e = _context.Event!.Find(id);
+        var e = _context.EventList!.Find(id);
         if (e == null)
         {
             return NotFound();

@@ -6,19 +6,19 @@ namespace ITB2203Application.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AttendeeController : ControllerBase
+public class AttendeesController : ControllerBase
 {
     private readonly DataContext _context;
 
-    public AttendeeController(DataContext context)
+    public AttendeesController(DataContext context)
     {
         _context = context;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Attendee>> GetAttendee(string? name = null)
+    public ActionResult<IEnumerable<Attendee>> GetAttendees(string? name = null)
     {
-        var query = _context.Attendee!.AsQueryable();
+        var query = _context.AttendeeList!.AsQueryable();
 
         if (name != null)
             query = query.Where(x => x.Name != null && x.Name.ToUpper().Contains(name.ToUpper()));
@@ -29,7 +29,7 @@ public class AttendeeController : ControllerBase
     [HttpGet("{id}")]
     public ActionResult<TextReader> GetAttendee(int id)
     {
-        var attendee = _context.Attendee!.Find(id);
+        var attendee = _context.AttendeeList!.Find(id);
 
         if (attendee == null)
         {
@@ -42,7 +42,7 @@ public class AttendeeController : ControllerBase
     [HttpPut("{id}")]
     public IActionResult Attendee(int id, Attendee attendee)
     {
-        var dbAttendee = _context.Attendee!.AsNoTracking().FirstOrDefault(x => x.Id == attendee.Id);
+        var dbAttendee = _context.AttendeeList!.AsNoTracking().FirstOrDefault(x => x.Id == attendee.Id);
         if (id != attendee.Id || dbAttendee == null)
         {
             return NotFound();
@@ -57,7 +57,7 @@ public class AttendeeController : ControllerBase
     [HttpPost]
     public ActionResult<Attendee> PostAttendee(Attendee attendee)
     {
-        var dbExercise = _context.Attendee!.Find(attendee.Id);
+        var dbExercise = _context.AttendeeList!.Find(attendee.Id);
         if (dbExercise == null)
         {
             _context.Add(attendee);
@@ -74,7 +74,7 @@ public class AttendeeController : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult DeleteAttendee(int id)
     {
-        var attendee = _context.Attendee!.Find(id);
+        var attendee = _context.AttendeeList!.Find(id);
         if (attendee == null)
         {
             return NotFound();

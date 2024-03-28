@@ -8,7 +8,7 @@ public class Event
 
         public string? Name { get; set; }
 
-        public int Date { get; set; }
+        public DateTime Date { get; set; }
 
         public int Location { get; set; }
 }

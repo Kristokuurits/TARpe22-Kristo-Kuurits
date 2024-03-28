@@ -11,6 +11,6 @@ public class Attendee
 
         public string? Email { get; set; }
 
-        public int RegistrationTime { get; set; }
+        public DateTime RegistrationTime { get; set; }
     
 }
