@@ -1,0 +1,38 @@
+#simon-sassian-section h2 {
+    color: #800000; /* Dark Red */
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#simon-sassian-section ul li {
+    color: #333; /* Dark Gray */
+}
+
+#simon-sassian-section strong {
+    color: #800000; /* Dark Red */
+    font-weight: bold;
+}
+
+#simon-sassian-section a {
+    color: #800000; /* Dark Red */
+    text-decoration: none;
+}
+
+#simon-sassian-section a:hover {
+    text-decoration: underline;
+}
+
+#simon-sassian-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#simon-sassian-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

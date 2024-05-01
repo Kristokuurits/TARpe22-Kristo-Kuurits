@@ -1,0 +1,57 @@
+.nigro-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(56, 7, 7);
+    font-family: sans-serif !important;
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    padding: 1em;
+    text-align: left !important;
+}
+
+.nigro-section h1, h2, p, label {
+    background-color: transparent;
+    font-family: sans-serif !important;
+}
+
+.nigro-section h1 {
+    color: rgb(254, 63, 63);
+}
+
+.nigro-special {
+    color: rgb(198, 67, 254);
+}
+
+
+.nigro-process-li {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+.nigro-main-title {
+    background-color: rgb(254, 63, 63) !important;
+    color: black !important;
+    text-align: center;
+    font-weight: 800;
+    padding: 1rem;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.nigro-title { 
+    width: 100%;
+    background-color: rgb(254, 63, 63) !important;
+    color: black !important;
+    padding: 0.2em;
+    text-transform: uppercase; 
+    letter-spacing: 0.2rem; 
+}
+
+
+.m0 { margin: 0; }
+.pre { white-space: pre; }
+.w05 { width: 50%; }
+.w075 { width: 75%; }

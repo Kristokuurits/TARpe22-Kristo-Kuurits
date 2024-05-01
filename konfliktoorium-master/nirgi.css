@@ -1,0 +1,117 @@
+.game-section {
+    background-color: rgb(247, 186, 0);
+    width: 100vw !important;
+    color: black;
+    padding: 1em !important;
+    letter-spacing: 1px;
+}
+
+.game-section h2 {
+    text-transform: uppercase;
+}
+
+.game-link {
+    color: white;
+}
+
+.game-info-highlight {
+    color: rgb(181, 42, 181);
+}
+
+.description-p {
+    font-size: 1.1rem;
+}
+
+.wrap-p {
+    word-wrap: break-word;
+    white-space: pre;
+    margin: 0;
+}
+
+.hl2-title {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.steam-button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(50, 50, 60);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    transition-duration: 200ms;
+}
+
+.steam-button:hover {
+    background-color: rgb(65, 65, 80);
+}
+
+.steam-button:active {
+    background-color: rgb(30, 30, 30);
+}
+
+
+.nirgi-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(230, 0, 255);
+    color: black;
+}
+
+.nirgi-separator label {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.vscode-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif !important;
+    background-color: rgb(21, 43, 72);
+    color: rgb(240, 240, 240);
+    padding: 1em;
+    letter-spacing: 1px;
+}
+
+.vscode-section h1, .vscode-section h2 {
+    font-family: sans-serif !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.vscode-section .features-list li {
+    color: rgb(238, 255, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.3rem;
+}
+
+.procon-table {
+    background-color: rgb(90, 90, 90);
+    width: 50%;
+    text-align: center;
+}
+
+
+.procon-table th {
+    background-color: rgb(74, 38, 78);
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.procon-table tr {
+    font-size: 1.5rem;
+}

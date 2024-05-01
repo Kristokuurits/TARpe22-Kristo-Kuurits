@@ -1,0 +1,43 @@
+.ultrakilldiv {
+    border: white;
+    background-color: blanchedalmond;
+    width: 99%;
+    padding: 10px
+}
+
+.ultrakillh1 {
+    text-align: center;
+    color: red;
+}
+
+.ultrakillh1 {
+    color: black;
+}
+
+.ultrakillh3 {
+    color: black;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: auto;
+}
+
+.steamlink {
+    color: white;
+    font-size: 60px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.Postman ul {
+    list-style-type: none;
+}
+
+.Postman li {
+    font-family: Arial;
+}

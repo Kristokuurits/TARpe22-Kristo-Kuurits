@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülesanne 2</title>
+    <style type="text/css">    
+        body {
+            background-color: rgb(52, 52, 52);
+            color: rgb(0, 179, 255);
+            font-family: "Comic Sans MS";
+        }  
+        a {
+            color: rgb(195, 255, 0);
+            text-decoration: none;
+        }
+        h1 {
+            background-color: rgb(52, 52, 52);
+            color: rgb(255, 0, 170);
+            font-family: "Comic Sans MS";
+        }
+        .separator {
+            background-color: rgb(152, 152, 152) !important;
+            color: rgb(145, 39, 39);
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .separator h1{
+            background-color: rgb(152, 152, 152) !important;
+            color: rgb(145, 39, 39);
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<br>
+<p>
+    <h1>Ülesanne 2</h1>
+    <br>
+    Sellele lehele, igaüks kes ennast kirja on pannud, kirjutab ühe lehe sektsiooni </br>
+    oma lemmikust tarkvaraarendusvahendist. See vahend võib olla programm, äpp, tööriist, </br>
+    programmeerimiskeel, arendusmetoodika, jne xkm. Mida selle vahendi kohta kirjutada:</br>
+    <ul>
+        <li>Vahendi nimi</li>
+        <li>Vahendi tüüp</li>
+        <li>Platvorm, väljalaskeaeg,</li>
+        <li>Paragrahv mis räägib mis on selle vahendi eesmärk</li>
+        <li>Paragrahv mis tutvustab vahendi võimalusi</li>
+        <li>Tabel kus on selle vahendi kasuks ja vastu rääkivad argumendid</li>
+        <li>Salespitch miks just *lugeja* seda kasutama peaks</li>
+        <li>Näide mida õpilane selle vahendiga teinud on</li>
+        <li>Sektsioon linkidega kus vahendiga seotud abimaterjalid/info/õppematgerjalid/tutorialid/jms</li>        
+        <li>Embeddi vastav video vahendi kasutusest</li>                
+        <li>KASUTADA LEHE SEKTSIOONIDE ERALDAMISEKS ALLJÄRGNEVAT ERALDAJAT</li>
+        <li>Väljaspool separatorit tuleb oma stiili kasutada, separatorile uut stiili juurde panna ei tohi.</li>
+        <li>Eelnevatest töödest copypaste teha ei tohi</li>
+        <li>Kellegi teisega samat tööriista valida ei saa</li>
+    </ul>
+</p>
+<div class="separator">
+    <p>
+        <h1>EESNIMI PEREKONNANIMI</h1>
+        Tarkvaravahendi nimetus || Tootja/Arendaja || Versioon
+    </p>
+</div>
+
+    <link rel="stylesheet" href="nirgi.css">
+
+    <div class="separator">
+        <p>
+            <h1 id="separator">MARCUS NIRGI</h1>
+            Visual Studio Code || Microsoft || 1.88
+        </p>
+    </div>
+
+    <section class="vscode-section">
+        <div style="display: flex; flex-direction: row; gap: 2rem; align-content: center; text-align: center; align-items: center; background-color: rgb(0, 174, 255); padding: 0 1rem;">
+            <img style="width: 100px; height: auto;" src="https://cdn.freebiesupply.com/logos/large/2x/visual-studio-code-logo-png-transparent.png">
+            <h1>Visual Studio Code</h1>
+        </div>
+        <strong>IDE</strong>
+
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+            <label><strong>Platvorm: </strong>PC</label>
+            <label><strong>Väljalaskeaeg: </strong>April 29, 2015</label>
+        </div>
+
+        <h1>Mis see on?</h1>
+        <p style="text-wrap: pretty;">
+            Visual Studio Code on kerge, kuid võimas lähtekoodiredaktor, mis töötab teie töölaual ja on saadaval Windowsi, macOS-i ja Linuxi jaoks. Sellel on sisseehitatud JavaScripti, TypeScripti ja Node.js-i tugi ning sellel on rikkalik laienduste ökosüsteem muude keelte ja käitustingimuste jaoks (nt C++, C#, Java, Python, PHP, Go, .NET).
+        </p>
+
+        <h1>Mis on selle eesmark?</h1>
+        <p style="text-wrap: pretty;">
+            VS Code eesmärk on pakkuda just neid tööriistu, mida arendaja vajab kiireks koodi koostamise ja silumise tsükliks ning jätab keerukamad töövood täiuslikumate IDE-dele, nagu Visual Studio IDE.
+        </p>
+
+        <h1>Mida pakub VS Code?</h1>
+        <ul class="features-list">
+            <li>Command Line</li>
+            <li>Command Pallette</li>
+            <li>Git Integration</li>
+            <li>Laiendused</li>
+            <li>Lihtsalt isikustatav</li>
+        </ul>
+
+        <h1>Kasud ja kahjud</h1>
+        <table class="procon-table">
+            <thead>
+                <th>+</th>
+                <th>-</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laiendatav</td>
+                    <td>Kerge laadida prügilaiendusi</td>
+                </tr>
+                <tr>
+                    <td>Kiirem kui Visual Studio</td>
+                    <td>Aeglasem kui Notepad++ ja osad spetsiifilisemad editorid</td>
+                </tr>
+                <tr>
+                    <td>Näeb ilus välja</td>
+                    <td>Kasutab Electron-i</td>
+                </tr>
+                <tr>
+                    <td>Väga lihtne minimaliseerida</td>
+                    <td>Vaikimisi on liiga palju ebavajalikke seadeid sisse lülitatud</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <strong style="font-size: 1.5rem; margin-top: 3em; display: block; align-self: center;">Kasuta Visual Studio Code, kui sulle meeldib panna oma koodiredaktorile omale sobilik stiil ja sulle ei meeldi, kui pool su ekraanist on "accessibility" nuppe täis.</strong>
+
+        <h1>Kuidas mina seda kasutanud olen?</h1>
+        <p style="text-wrap: pretty; white-space: pre;">
+Kasutan VS Code igapäevaselt, olgu see kodus mingite iseseisvate projektide arendamises või koolitööde juures.
+Loen tekstifaile ka VS Code-is :D
+        </p>
+
+        <h1>Uuri ise isaks</h1>
+        <div style="display: flex; flex-direction: column; gap: 1em;">
+            <div style="display: flex; flex-direction: column;">
+                <label>VS Code koduleht</label>
+                <a href="https://code.visualstudio.com/">code.visualstudio.com</a>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <label>VS Code ja Python</label>
+                <a href="https://code.visualstudio.com/docs/python/python-tutorial">Getting Started with Python in VS Code</a>
+            </div>
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/phzQMwFXMEo?si=btVMQBSLwIXQJFQD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div class="separator">
+    <p>
+        <h1>SIMON SASSIAN</h1>
+        Visual Studio || Microsoft || 1.88
+    </p>
+</div>
+
+<section class="simon-section">
+    <h2>Visual Studio</h2>
+    <ul>
+        <li>Vahendi nimi: Visual Studio - Simon Sassian</li>
+        <li>Vahendi tüüp: Integreeritud arenduskeskkond (IDE)</li>
+        <li>Platvorm: Windows. Väljalaskeaeg: 1997</li>
+        <li>Eesmärk: Visual Studio on terviklik tarkvaraarenduse tööriistakomplekt, mis võimaldab arendajatel luua erinevaid rakendusi, sealhulgas veebi-, mobiili- ja pilvetarkvara.</li>
+        <li>Tutvustus: Visual Studio pakub laia valikut funktsioone, sealhulgas terviklikku integreeritud arenduskeskkonda, koodiredaktorit, silumis- ja testimistööriistu ning meeskonnatöö funktsioone.</li>
+        <li>
+            Kasuks ja vastu:
+            <table>
+                <tr>
+                    <th>Kasuks</th>
+                    <th>Vastu</th>
+                </tr>
+                <tr>
+                    <td>Terviklik tugi mitme keele ja platvormi jaoks</td>
+                    <td>Aeglane ja ressursinõudlik</td>
+                </tr>
+                <tr>
+                    <td>Integreeritud arendus-, silumis- ja testimistööriistad</td>
+                    <td>Mõned funktsioonid võivad olla keerulised algajatele</td>
+                </tr>
+                <tr>
+                    <td>Meeskonnatöö funktsioonid ()</td>
+                    <td>Litsentsitasu võib olla kõrge</td>
+                </tr>
+            </table>
+        </li>
+        <li>Salespitch: Visual Studio pakub kõikehõlmavat lahendust tarkvaraarenduseks, mis võimaldab arendajatel tõhusalt ja produktiivselt luua mitmesuguseid rakendusi igas suuruses ja keerukusastmes.</li>
+        <li>Näide: Näiteks võib õpilane kasutada Visual Studio't C# programmeerimiskeele ja ASP.NET raamistiku abil veebirakenduse loomiseks ning seda integreerida Azure'iga pilvepõhise majutusteenuse kasutamiseks.</li>
+        <li>
+            Abimaterjalid:
+            <ul>
+                <li><a href="https://docs.microsoft.com/en-us/visualstudio/">Visual Studio dokumentatsioon</a></li>
+                <li><a href="https://marketplace.visualstudio.com/">Visual Studio Marketplace</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VcU2HGsxeII">Visual Studio õppevideo</a></li>
+            </ul>
+        </li>
+        <li>Embeddi vastav video vahendi kasutusest: <iframe width="1280" height="720" src="https://www.youtube.com/embed/VcU2HGsxeII" title="Visual Studio For Beginners - 2022 and Beyond" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+    </ul>
+</section>
+<section>
+    <h2>Press:React</h2>
+    <P>
+        <ul>
+            <li>Vahendi nimi</li>
+            <li>Vahendi tüüp</li>
+            <li>Platvorm, väljalaskeaeg,</li>
+            <li>Paragrahv mis räägib mis on selle vahendi eesmärk</li>
+            <li>Paragrahv mis tutvustab vahendi võimalusi</li>
+            <li>Tabel kus on selle vahendi kasuks ja vastu rääkivad argumendid</li>
+            <li>Salespitch miks just *lugeja* seda kasutama peaks</li>
+            <li>Näide mida õpilane selle vahendiga teinud on</li>
+            <li>Sektsioon linkidega kus vahendiga seotud abimaterjalid/info/õppematgerjalid/tutorialid/jms</li>        
+            <li>Embeddi vastav video vahendi kasutusest</li>                
+            <li>KASUTADA LEHE SEKTSIOONIDE ERALDAMISEKS ALLJÄRGNEVAT ERALDAJAT</li>
+            <li>Väljaspool separatorit tuleb oma stiili kasutada, separatorile uut stiili juurde panna ei tohi.</li>
+            <li>Eelnevatest töödest copypaste teha ei tohi</li>
+            <li>Kellegi teisega samat tööriista valida ei saa</li>
+        </ul>
+    </P>
+</section>
+
+<section class="Juht">
+    <link rel="stylesheet" href="Juht.css">
+    
+    
+    <h1 class="EpicJuhtTitle">jQuery</h1>
+    
+
+<ul class="tilesWrap">
+    <li>
+      <h2>01</h2>
+      <h3>What is</h3>
+      <p>
+        jQuery on programmeerimiskeel mis keskendub javascripti 
+        ja HTML-i vastastikusele mõjule.
+      </p>
+    </li>
+    <li>
+      <h2>02</h2>
+      <h3>Title 2</h3>
+      <p>
+        When an unknown printer took a galley of type and scrambled it to make 
+        a type specimen book. It has survived not only five centuries.
+      </p>
+    </li>
+    <li>
+      <h2>03</h2>
+      <h3>Title 3</h3>
+      <p>
+        But also the leap into electronic typesetting, remaining essentially 
+        unchanged. It was popularised in the 1960s.
+      </p>
+    </li>
+    <li>
+      <h2>04</h2>
+      <h3>Title 4</h3>
+      <p>
+        With the release of Letraset sheets containing Lorem Ipsum passages,  
+        and more recently with desktop publishing software like Aldus PageMaker 
+        including versions of Lorem Ipsum.
+      </p>
+    </li>
+  </ul>
+</section>
+<div class="separator">
+    <p>
+        <h1>Markus Väli</h1>
+        Postman || Postman Inc. || 10.24
+    </p>
+</div>
+<div class="Postman">
+    <ul>
+        <li>Postman</li>
+        <li>Vahendi tüüp</li>
+        <li>Platvorm, väljalaskeaeg,</li>
+        <li>Paragrahv mis räägib mis on selle vahendi eesmärk</li>
+        <li>Paragrahv mis tutvustab vahendi võimalusi</li>
+        <li>Tabel kus on selle vahendi kasuks ja vastu rääkivad argumendid</li>
+        <li>Salespitch miks just *lugeja* seda kasutama peaks</li>
+        <li>Näide mida õpilane selle vahendiga teinud on</li>
+        <li>Sektsioon linkidega kus vahendiga seotud abimaterjalid/info/õppematgerjalid/tutorialid/jms</li>        
+        <li>Embeddi vastav video vahendi kasutusest</li>                
+        <li>KASUTADA LEHE SEKTSIOONIDE ERALDAMISEKS ALLJÄRGNEVAT ERALDAJAT</li>
+        <li>Väljaspool separatorit tuleb oma stiili kasutada, separatorile uut stiili juurde panna ei tohi.</li>
+        <li>Eelnevatest töödest copypaste teha ei tohi</li>
+        <li>Kellegi teisega samat tööriista valida ei saa</li>
+    </ul>
+</div>
+</body>
+</html>
