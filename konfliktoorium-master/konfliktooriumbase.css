@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(52, 52, 52);
+    color: rgb(0, 179, 255);
+    font-family: "Comic Sans MS";
+}  
+a {
+    color: rgb(195, 255, 0);
+    text-decoration: none;
+}
+h1 {
+    background-color: rgb(52, 52, 52);
+    color: rgb(255, 0, 170);
+    font-family: "Comic Sans MS";
+}
+.th {
+    background-color: rgb(0, 179, 255);
+    color: rgb(255, 255, 255);
+}
+.separator {
+    background-color: rgb(152, 152, 152) !important;
+    color: rgb(145, 39, 39);
+    font-family: sans-serif;
+    text-align: center;
+}
+.separator h1{
+    background-color: rgb(152, 152, 152) !important;
+    color: rgb(145, 39, 39);
+    font-family: sans-serif;
+    text-align: center;
+}
+.yes{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 81, 32) !important;
+}
+.no{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(81, 0, 0) !important;
+}
+.maybe{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(180, 120, 0) !important;
+}
+.table{
+    border-style: solid;
+    border-width: 10px !important;
+    border-color: white !important;
+}

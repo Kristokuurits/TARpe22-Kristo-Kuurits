@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülesanne 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/css">    
+        body {
+            background-color: rgb(52, 52, 52);
+            color: rgb(0, 179, 255);
+            font-family: "Comic Sans MS";
+        }  
+        a {
+            color: rgb(195, 255, 0);
+            text-decoration: none;
+        }
+        h1 {
+            background-color: rgb(52, 52, 52);
+            color: rgb(255, 0, 170);
+            font-family: "Comic Sans MS";
+        }
+        .separator {
+            background-color: rgb(152, 152, 152) !important;
+            color: rgb(145, 39, 39);
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .separator h1{
+            font-size: 80px !important;
+            background-color: rgb(152, 152, 152) !important;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            text-align: center;
+
+        }
+        .teamseparator {
+            border-style: solid;
+            border-width: 10px !important;
+            border-color: white !important;
+        }
+    </style>
+</head>
+<br>
+
+<!-- abrakadabra -->
+
+<p>
+    <h1>Ülesanne 3</h1>
+    <br>
+    Sellele lehele, teeb iga meeskond oma sektsiooni kirjutades artikli ühest tarkvaralisest programmist  </p>
+    mis meeskonna arvates muudaks tthks koolitööd lihtsamaks. Programmi idee mõtleb grupp ise välja. </br>
+    Iga meeskonna liikme panus peab olema välja toodud (commitidest kajastub kes mida üles pani ja sektsioonis</br>
+    peaks olema välja toodud kes mida ideesse panustas). Üks sektsioon peaks sisaldama järgnevat:</br>
+    <ul>
+        <li>Püstitatud probleem</li>
+        <li>Lahenduse nimi</li>
+        <li>Lahenduse tüüp</li>
+        <li>Platvorm</li>
+        <li>Salespitch miks just *see* lahendus õige on</li>
+        <li>Analüüs mis selgitaks ära miks alternatiivsed lahendused ei sobi või ei ole kohapärased</li>
+        <li>Paragrahv mis räägib mis on selle lahenduse eesmärk</li>
+        <li>Paragrahv mis selgitab kuidas lahendus peaks töötama</li>
+        <li>Teoreetiline arenduskäik</li>
+        <li>Mis arendusmetoodika lahenduse väljatöötamiseks sobiks ja miks.</li>            
+        <li>KASUTADA LEHE SEKTSIOONIDE ERALDAMISEKS ALLJÄRGNEVAT ERALDAJAT</li>
+        <li>Väljaspool separatorit peab meeskond tervikuna oma stiili välja töötama.</li>
+        <li>Eelnevatest töödest copypaste teha ei tohi</li>
+        <li>Kellegi teisega samamoodi lahendust teha ei saa. Sama probleemi saab lahendada, aga lahendus ei tohi olla samasugune</li>
+    </ul>
+    Etteseatud meeskonnad:
+    <ul>
+        <li>
+            1 | Nirgi, Sassian, Juht
+        </li>
+        <li>
+            2 | Lemming, Kuurits, Rohusaar
+        </li>
+        <li>
+            3 | Tammeveski, Meerits, Müürsepp
+        </li>
+    </ul>
+</p>
+<div class="separator teamseparator">
+    <p>
+        <h1>MEESKONNANIMI</h1>
+        <table align="center">
+            <td>
+                <h2>MEESKONNA SLOGAN</h2>
+            </td>
+            <td>                
+                MEESKONNA LOGO
+            </td>
+        </table> 
+        
+        Meeskonnaliikmed: 1 || 2 || 3 || 4 || 5 || 6 
+    </p>
+</div> </br></br></br></br></br></br>
+
+<div class="separator teamseparator">
+    <h1>E_Kool</h1>
+    <div>
+        <h2 style="font-weight: bold; margin: 20px;">"Tahvel on pask"</h2>
+        <img style="margin: auto; margin-bottom: 20px;" src="meeskonnalogho.png">
+    </div> 
+        
+    <p style="margin-bottom: 10px;">Meeskonnaliikmed: Kristo || Kuurits || Marken || Lemming || Rohusaar</p>
+</div>
+
+<link rel="stylesheet" href="e_kool.css">
+<div class="ekool-container">
+    <div>
+        <p>Tahvel on halb kuna sealt on raske leida informatsiooni, õpetajate kodutööd ei lähe mõnikord üles ja tunniplaani ei ole näha.<br> 
+        Lisaks see on aeglane, peab sisselogima id-ga ning kui sa afk 2min see viskab sind välja. ekool on parem. <br>
+        kõik OS-id sobivad, kus on olemas web browser.<br></p>
+    </div>
+
+    <div>
+        <p><span><strong>Tüüp: </strong><label>tarkvaraarendajatele natuke lisatääd</label></span><br>
+        <span><strong>Platvorm: </strong>Server</span></p>
+    </div>
+    <div>
+        <button class="button" onclick='triggerDropDown("salespitch")'>
+            Salespitch
+        </button>
+        <div id="salespitch" style="display: none">
+            <p>Meie veebileht ja app on kiirem, actually töötab, lihtsam kasutada ja leiab informatsiooni kergelt. See ka näeb ilusam välja ja on seal on võimalik enda tunniplaani näha ning kodutööde tähtajad</p>
+        </div>
+        <br>
+
+        <button class="button" onclick='triggerDropDown("analysis")'>
+            Analüüs
+        </button>
+        <br>
+        <div id="analysis" style="display: none">
+            <p>Tahvlit on uuendatud koguaeg ja ikka see ei tööta normaalselt. kõik keda ma tean, kes kasutavad tahvlit räägivad koguaeg kui halb ja ebamugav see on ning kuidas nad igatsevad ekooli. Õpilased on proovinud alternatiivset programmi teha, aga ei õnnestund, sest nad ei tea kuidas tahvel töötab, et seda on veidikene raske kopeerida. Ekool on yks ja ainuke lahendus.<br></p>
+        </div>
+
+        <button class="button" onclick='triggerDropDown("goal")'>
+            Eesmärk
+        </button>
+        <div id="goal" style="display: none">
+            <p>Selle lahenduse eesmärk on see et, see teeks hinnete vaatamise ja lisamise mugavamaks nii õpilastele kui ka õpetajatele.<br>
+                See teeb ka lihtsamaks et saada informatsiooni.<br></p>
+        </div>
+        <br>
+
+        <button class="button" onclick='triggerDropDown("instructions")'>
+            Juhis by юхть
+        </button>
+        <div id="instructions" style="display: none">
+            <p>Esilehel on näha keskel üleval tunniplaani koos sinu kursusega seotud tunniplaani muudatusdega. sellest paremal on näha koduseidtöid ja nende tähtaeg. Vasakul pool veebilehte on sidebar, kus leidub infot sinu kursuse õpetajate kohta näiteks, mis ainet nad õpetavad, ja õppetoetused, kust saab taodelta stippi ehk viina raha.<br></p>
+        </div>
+    
+    </div>
+        
+</div>
+
+<script>
+    
+    function triggerDropDown(Id) {
+        var dropdown = document.getElementById(Id);
+        if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+        } else {
+            dropdown.style.display = "none";
+        }
+    }
+</script>
+
+
+<div class="separator teamseparator" style="display: flex; flex-direction: column;">
+    <p>
+        <h1>Kolm Tegelast</h1>
+        <table align="left">
+            <td>
+                <h2>Oleme Nigrod</h2>
+            </td>
+            <td>                
+                <img src="nigrologo.png">
+            </td>
+        </table> 
+        
+        Meeskonnaliikmed: Nirgo || Jyht || Sass-ian
+    </p>
+</div>
+
+<link rel="stylesheet" href="nigros.css">
+<section class="nigro-section">
+    <h1 class="nigro-main-title">TTHK Tunniplaani API</h1>
+    <span><strong>Tüüp: </strong><label>Lisatöö tarkvaraarendajatele</label></span>
+    <span><strong>Platvorm: </strong><label class="nigro-special">Server</label></span>
+
+    <p class="w075 pre m0"; style="font-weight: bold;">
+        Kas sa oled kunagi misclickinud kuskil ja see on sind närvi ajanud, näiteks vajutanud close ja mitte minimize.
+        Või kas sa oled otsinud midagi ja läinud mööda sellest, kus peale sellest mööda minemist, 
+        sa märkad ja karjud arvuti peale. Meie elame mugavuse ajastul, miks meie peame siiamaani mitme
+        klõpsaga tegema asjaa mida on võimalik teha paariga. Pole vaja muretseda rohkem, meil on lahendus.
+        TTHK Tunniplaani API või lihtsalt Tunniplaani shortcut. Sellega saate teie oma klassi tunniplaani 
+        näha lihtsalt ühe nupu vajutusega. Koos sellega ei pea rohkem minema läbi selle protsessi mida oli
+        alguses õeldud ja lihtsalt ühe klõpsaga saaks oma tunniplaani näha *cheers sound effect*
+    </p>
+
+    <h1 class="nigro-title">Probleem</h1>
+    <p class="w075 pre m0">
+        Hetkel, kui tahame teada oma kooli tunniplaani, peame minema
+        TTHK kodulehele, vaatama muudatusi ja siis eraldi minema EduPage tunniplaani lehele.
+        Meie arust on see tüütu. Seega võiks luua API, mis soodustaks koolile uue tunniplaani front-endi tegemise.
+    </p>
+
+    <!-- nirgi -->
+    <h1 class="nigro-title">Eesmärk</h1>
+    <p class="w075 pre m0">
+        Selle lahenduse eesmärk oleks anda õpilastele võimalust kasutada TTHK tunniplaani
+        oma programmides ja luua nende andmetega front-end lahendus.
+        Sellised lahendused võimaldaksid meil luua ühine platvorm tunniplaaniga seotud asjade jaoks
+    </p>
+    <!-- lõpp -->
+    <!-- Juht -->
+    <h1 class="nigro-title">Selgitus</h1>
+    <p class="w075 pre m0">
+        Meie hakkame kasutama API-d et saada spetsiiflise klassi (TARpe22) avada ühe nupuga.
+        API kasutamisega saame meie kasutada tthk.ee ja edupage.ee-i et läbi selle saada oma klassi omapärast API-d
+        selle API-ga saame automaatselt oma klassi kätte ja mitte kõige esimese tunniplaani tabeli tähestikust
+    <!-- lõpp -->
+
+    <!-- simon -->
+    <h1 class="nigro-title">Miks mitte teised lahendused?</h1>
+    <p class="w075 pre m0">
+        Meie Lahendus pakkub mugavust Õpetajatele kui ka Õpilstele kuna see on päris tüütu käija kaks erinevat lehte
+        läbi tunniplaanni oma kui ka tunniplaanimudatused meie API paneb need üheks et oleks hea ja mugav kõigil.
+    <!-- lõpp -->
+
+<!-- nirgi -->
+<h1 class="nigro-title">Eesmärk</h1>
+<p class="w075 pre m0">
+    Selle lahenduse eesmärk oleks anda õpilastele võimalust kasutada TTHK tunniplaani
+    oma programmides ja luua nende andmetega front-end lahendus.
+    Sellised lahendused võimaldaksid meil luua ühine platvorm tunniplaaniga seotud asjade jaoks
+
+    <h1 class="nigro-title">Selgitus</h1>
+<p class="w075 pre m0">
+    Meie hakkame kasutama API-d et saada spetsiiflise klassi (TARpe22) avada ühe nupuga.
+    API kasutamisega saame meie kasutada tthk.ee ja edupage.ee-i et läbi selle saada oma klassi omapärast API-d
+    selle API-ga saame automaatselt oma klassi kätte ja mitte kõige esimese tunniplaani tabeli tähestikust
+</p>
+        <!-- simon -->
+<!-- simon -->    
+    <h1 class="nigro-title">Mis arendusmetoodika lahenduse väljatöötamiseks sobiks ja miks</h1>
+    <p class="w075 pre m0">
+        Kuna eesmärk on luua funktsionaalne ja kasutajasõbralik API, mis võimaldab õpilastel ja õpetajatel mugavalt juurde pääseda tunniplaanile, siis sobiks selleks Agile meetod. 
+        Agile metoodika võimaldab paindlikkust ja kiiret reageerimist muudatustele ning see on eriti kasulik projektide puhul, kus nõuded võivad muutuda arenduse käigus.
+        Scrum, mis on üks Agile'i metoodikatest, võiks olla hea valik. Scrum jagab arendustöö lühikesteks iteratsioonideks, 
+        mida nimetatakse sprintideks. Iga sprint kestab tavaliselt 1-4 nädalat ja lõpeb kasutatava tarkvara töötava versiooni väljastamisega. 
+        See võimaldab tiimil kiiresti reageerida tagasisidele ja muudatustele ning tagab regulaarse tootearenduse.
+        Lisaks võiks kasutada ka Lean'i arendusmetoodikat, mis keskendub raiskamise vähendamisele ning pidevale täiustamisele ja efektiivsuse suurendamisele. Lean metoodika 
+        aitaks tagada, et API arendusprotsess oleks efektiivne ja kulutõhus.
+        Üldiselt võimaldavad Agile meetodid paindlikku ja kiiret reageerimist muutustele ning aitavad tagada, et lõpptulemus vastaks kasutajate vajadustele ja ootustele.
+        <!-- lõpp -->
+        
+    
+    <!-- nirgi -->
+    <h1 class="nigro-title">Teoreetiline arenduskäik</h1>
+    <p class="w075 pre m0">
+        <ol>
+            <li class="nigro-process-li">Otsustada, kuidas API peaks töötama</li>
+            <li class="nigro-process-li">Teha otsus, kas projekt peaks olema open-source</li>
+            <li class="nigro-process-li">Valida arendustööriistad</li>
+            <li class="nigro-process-li">Uurida EduPage tunniplaani tööd back-endis</li>
+            <li class="nigro-process-li">Proovida leida tunniplaani andmeid EduPage tunniplaanist</li>
+            <li class="nigro-process-li">Luua mudelid/json response struktuur EduPage tunniplaanile kui vajalik</li>
+            <li class="nigro-process-li">Luua Tunniplaani teenus(Timetable Service)</li>
+            <li class="nigro-process-li">Luua testid</li>
+            <li class="nigro-process-li">Optimeerida ja refaktoreerida koodi</li>
+        </ol>
+    </p>
+    <!-- lõpp -->
+</section>
+
+<section>
+    <div class="separator teamseparator">
+        <p>
+            <h1>3 homot</h1>
+            <table align="center">
+                <td>
+                    <h2>me ei ole homot</h2>
+                </td><br>
+                <td>                
+                    <img src="logo.png">
+                </td>
+            </table> 
+            
+            Meeskonnaliikmed: Dorian Tammeveski || Artur Müürsepp || Sten-Patrick Meerits || homot || homot || homot 
+        </p>
+    </div>
+</section>
+
+
+</body>
+</html>
+
+</html>
